@@ -7,8 +7,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
-
+/**
+ * Created by ravadaj on 30/08/16.
+ */
+public class MersennePrime {
 
     public static boolean isPowerOfTwo(int number) {
 
@@ -51,7 +53,8 @@ public class Main {
 
     public static void main(String args[]) throws IOException {
 
-        File file = new File(args[0]);
+        File file = new File(
+                "/Users/ravadaj/Desktop/codeeval.txt");
         BufferedReader in = new BufferedReader(new FileReader(file));
         String line;
         while (((line = in.readLine()) != null)) {
@@ -67,7 +70,7 @@ public class Main {
                 if(mersenneNumbers.size()==1)
                     System.out.print(i);
                 else
-                    System.out.print(i+",\t");
+                System.out.print(i+",\t");
             }
             System.out.println();
         }
